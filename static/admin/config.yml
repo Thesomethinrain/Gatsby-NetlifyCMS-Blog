@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: Thesomethinrain/Gatsby-NetlifyCMS-Blog #replace with your username/repo
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: posts
+    label: Posts
+    folder: /content/blog
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: description, label: Description }
+      - { name: "tags", label: "Tags", widget: "list"}
+      - { name: "featuredImage", label: "Featured Image", widget: "image" }
+      - { name: body, label: Body, widget: markdown }
