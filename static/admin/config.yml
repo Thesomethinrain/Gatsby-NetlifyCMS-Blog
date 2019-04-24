@@ -2,8 +2,8 @@ backend:
   name: github
   repo: Thesomethinrain/Gatsby-NetlifyCMS-Blog #replace with your username/repo
 
-media_folder: static/img
-public_folder: /img
+media_folder: static/images
+public_folder: /images
 
 collections:
   - name: posts
